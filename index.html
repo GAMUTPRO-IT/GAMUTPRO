@@ -1203,7 +1203,7 @@
       entries.forEach(function(entry){
         if(entry.isIntersecting){ animateCount(entry.target); countObserver.unobserve(entry.target); }
       });
-    }, { threshold:0.6 });
+    }, { threshold:0.2 });
     countEls.forEach(function(el){ countObserver.observe(el); });
   } else {
     countEls.forEach(function(el){ el.textContent = el.getAttribute('data-count-to'); });
